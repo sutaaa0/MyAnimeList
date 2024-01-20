@@ -3,7 +3,7 @@ import React from "react";
 import { getAnimeRespons } from "../../lib/getAnimeRespons";
 import Image from "next/image";
 import VideoPlayers from "../../components/VideoPlayers/VideoPlayers"
-import Btnback from "../../topcharacter/Btnback";
+import BtnBack from "../../topcharacter/BtnBack";
 
 const Page = async ({ params: { id } }) => {
   const animeDetails = await getAnimeRespons(`anime/${id}`);
@@ -13,7 +13,7 @@ const Page = async ({ params: { id } }) => {
       <div className="text-center mt-16 flex py-2 justify-between text-2xl">
         <h3>{animeDetails.data.title}</h3>
         <div>
-            <Btnback />
+            <BtnBack />
         </div>
       </div>
       <div className="flex w-full lg:flex-row flex-col gap-x-3 lg:justify-between items-top">

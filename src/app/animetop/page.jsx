@@ -4,7 +4,7 @@ import Header from "./Header";
 import Cardtes from "../components/AnimeList/CardTes";
 import Pagination from "../components/Pagination/Pagination";
 import { getAnimeRespons } from "../lib/getAnimeRespons";
-import Btnback from "../topcharacter/Btnback";
+import BtnBack from "../topcharacter/BtnBack";
 const AnimeTop = () => {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -31,7 +31,7 @@ const AnimeTop = () => {
       <div className="w-full h-[70px]"></div>
       <Header title={"Top Anime halaman"} page={page} />
       <div className="w-full flex justify-end px-3">
-        <Btnback />
+        <BtnBack />
       </div>
       <div className="grid  md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-3">
         {data.data?.map((data) => {

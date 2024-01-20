@@ -2,7 +2,7 @@
 import React from "react";
 import { getAnimeRespons } from "../../lib/getAnimeRespons";
 import Image from "next/image";
-import Btnback from "../../topcharacter/Btnback"
+import BtnBack from "../../topcharacter/BtnBack"
 import Link from "next/link";
 
 const Page = async ({ params: { id } }) => {
@@ -14,7 +14,7 @@ const Page = async ({ params: { id } }) => {
       <div className="text-center flex justify-between mt-12 py-2 text-2xl">
         <h3>{characterDetails.data.name}</h3>
         <div>
-            <Btnback />
+            <BtnBack />
         </div>
       </div>
       <div className="flex w-full lg:flex-row flex-col gap-x-3 lg:justify-between items-top">
