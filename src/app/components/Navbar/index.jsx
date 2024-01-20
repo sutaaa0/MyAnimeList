@@ -1,3 +1,4 @@
+import SearchBar from "./SearchBar"
 
 
 const Navbar = () => {
@@ -16,6 +17,9 @@ const Navbar = () => {
           </div>
           <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block px-2">
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:bg-transparent rounded-md sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+              <div>
+                <SearchBar />
+              </div>
               <a className="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/" aria-current="page">Home</a>
               <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/populer">Populer</a>
               <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/animetop">Top Anime</a>

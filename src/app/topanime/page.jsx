@@ -1,6 +1,6 @@
 import React from "react";
-import CardTes from "../components/AnimeList/CardTes";
 import { getAnimeRespons } from "../lib/getAnimeRespons";
+import CardTes from "../components/AnimeList/CardTes"
 
 export default async function TopAnime () {
   const topAnime = await getAnimeRespons("top/anime", "limit=8");
